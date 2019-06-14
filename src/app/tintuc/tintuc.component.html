@@ -1,0 +1,70 @@
+<br>
+
+  
+<div class="row ">
+  
+    <div class="col-sm-3" style="margin-top:20px; ">
+      <div style="background:  #e6e6ea ">
+        <button type="button" class="btn btn-info" style="width:260px; color: red; font-size:20px"routerLink="/sanpham">Danh mục sản phẩm</button>
+        <a class="dropdown-item"href="#" style="font-size:18px">Thiết bị cấp nước chữa cháy</a>
+        <a class="dropdown-item"href="#"style="font-size:18px">Thiết bị báo cháy tự động</a>
+          <a class="dropdown-item" href="#"style="font-size:18px">Trang phục chữa cháy</a>
+          <a class="dropdown-item"href="#"style="font-size:18px">Thiết bị chống sét</a>
+          <a class="dropdown-item"href="#"style="font-size:18px">Bình chữa cháy</a>
+          <a class="dropdown-item"href="#"style="font-size:18px">Camera báo cháy, báo trộm</a>
+        <a class="dropdown-item"href="#"style="font-size:18px">TB chiếu sáng thoát nạn</a>
+          <a class="dropdown-item" href="#"style="font-size:18px">Thiết bị cứu nạn, cứu hộ</a>
+        <a class="dropdown-item" href="#"style="font-size:18px">Xe chữa cháy</a>  
+            
+      </div>
+      <br>
+      <div>
+      <button type="button" class="btn btn-info" style="width:260px; color: red"routerLink="/lienhe">Hộ trợ trực tuyến</button>
+      <p>
+        <img src="../assets/hotline-dongduongpool.jpg" style="width:60px">
+        <span>
+          <strong>HOTLINE :</strong>       
+          <a>    0905 646 162</a>
+        </span>
+      </p>
+      </div>
+      
+      <img src="assets/1.jpg" style="width: 260px; height:340px">
+    </div>   
+    
+    <div class="col-sm-9" >
+        <div style=" background: tomato"> <h5 style="margin-left: 20px; font-size: 25px"> Tin tức </h5></div>
+        <ul class="list-unstyled" *ngFor="let p of Tintucs | paginate: { itemsPerPage: pitem, currentPage: cpage }">
+            <li class="media">
+              <img src="{{p.img}}" class="mr-3" >
+              <div class="media-body">
+               <a href="{{p.src}}"> <h5 class="mt-0 mb-1">{{p.tenbaibao}}</h5></a>
+                {{p.chitiet}}
+              </div>
+            </li>   
+          </ul>
+    </div>
+  
+    
+  
+    </div>
+    
+   
+    <div aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item" *ngFor='let p of page'><a class="page-link" (click)="setPage(p)">{{p}}</a></li>
+        <li class="page-item">
+          <a class="page-link" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <br>

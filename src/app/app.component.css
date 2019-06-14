@@ -1,0 +1,320 @@
+
+nav {
+  margin-top: 0px;
+  padding: 30px;
+
+  
+  /*box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+}
+/*#nav-1 {
+  background: #3fa46a;
+}*/
+ 
+
+
+  .nen{
+    background-color:violet ;
+  }
+  a{
+      font-size: 20px;
+  }
+  .logo
+  {
+      background-size: cover;
+  }
+  
+  
+  
+  /* Mini reset, no margins, paddings or bullets */
+  
+  
+
+  
+ 
+  
+ 
+ /* @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+  }*/
+  body {
+    background: #313131;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 15px;
+  }
+  
+  .columns {
+    display: flex;
+  }
+  /**button*/
+  .columns.two .block-button a {
+    -webkit-border-radius: 2px !important;
+    -webkit-background-clip: padding-box !important;
+    -moz-border-radius: 2px !important;
+    -moz-background-clip: padding !important;
+    border-radius: 2px !important;
+    background-clip: padding-box !important;
+  }
+  .columns.two .block-button .ico {
+    font-size: 1.5rem;
+  }
+  .columns.two .block-button .txt {
+    margin-left: 10px;
+  }
+  .block-button {
+    margin: 40px;
+  }
+  .block-button a {
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 50%;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 50%;
+    -moz-background-clip: padding;
+    border-radius: 50%;
+    background-clip: padding-box;
+    color:red;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .block-button a .ico {
+    font-size: 2.8rem;
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+  .block-button.button-style1 a:after,
+  .block-button.button-style9 a:after {
+    background: #123851;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 4px solid #2980b9;
+    content: '';
+    z-index: -1;
+    -webkit-border-radius: 50%;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 50%;
+    -moz-background-clip: padding;
+    border-radius: 50%;
+    background-clip: padding-box;
+  }
+  .block-button.button-style1 a:hover:after,
+  .block-button.button-style9 a:hover:after {
+    border-color: transparent;
+    animation: spinning cubic-bezier(0.18, 0.14, 0.29, 1) 1s;
+    border-right-color: #2980b9;
+    border-left-color: #2980b9;
+    border-top-color: #ffffff !important;
+    border-bottom-color: #ffffff !important;
+  }
+ 
+/*.block-button.button-style7 a {
+    background: #a01616;
+}*/
+  .block-button.button-style7 a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 50%;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 50%;
+    -moz-background-clip: padding;
+    border-radius: 50%;
+    background-clip: padding-box;
+    border: 4px solid #1abc9c;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+  .block-button.button-style7 a:hover:after {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+  }
+ 
+/*nav*/
+
+  #nav,#nav ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+}
+#nav {
+    background: no-repeat scroll 0 0 transparent;
+    clear: both;
+    font-size: 12px;
+    height: 0px;
+    padding: 0 0 0 9px;
+    position: relative;
+   width: 780px;
+   
+   
+}
+#nav ul {
+    background-color: #222;
+    border:1px solid #222;
+    border-radius: 0 5px 5px 5px;
+    border-width: 0 1px 1px;
+    /*box-shadow: 0 5px 5px #00B4FF;*/
+    left: -9999px;
+    overflow: hidden;
+    position: absolute;
+    top: -9999px;
+    z-index: 2;
+
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+
+    -moz-transition: -moz-transform 0.5s ease-in-out;
+    -ms-transition: -ms-transform 0.5s ease-in-out;
+    -o-transition: -o-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+}
+#nav li {
+    background: no-repeat scroll right 5px transparent;
+    float: left;
+    position: relative;
+}
+#nav li a {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-weight: normal;
+    height: 40px;
+    padding: 20px 20px 0;
+    position: relative;
+    text-decoration: none;
+   /** text-shadow: 1px 1px 1px #000000;*/
+}
+#nav li:hover > a {
+    color:#fed766 ;
+}
+#nav li:hover, #nav a:focus, #nav a:hover, #nav a:active {
+   /* background: none repeat scroll 0 0 #00B4FF;*/
+    outline: 0 none;
+}
+#nav li:hover ul.subs {
+    left: 0;
+    top: 53px;
+    width: 300px;
+height: 380px;
+
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+#nav ul li {
+    background: none;
+    width: 100%;
+}
+#nav ul li a {
+    float: none;
+}
+#nav ul li:hover > a {
+    /*background-color:red;*/
+    color: #00B4FF;
+}
+#lavalamp {
+    background: no-repeat scroll 0 0 transparent;
+    height: 16px;
+    left: 13px;
+    position: absolute;
+    top: 0px;
+    width: 64px;
+
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+#lavalamp:hover {
+    -moz-transition-duration: 3000s;
+    -ms-transition-duration: 3000s;
+    -o-transition-duration: 3000s;
+    -webkit-transition-duration: 3000s;
+    transition-duration: 3000s;
+}
+#nav li:nth-of-type(1):hover ~ #lavalamp {
+    left: 13px;
+}
+#nav li:nth-of-type(2):hover ~ #lavalamp {
+    left: 90px;
+}
+#nav li:nth-of-type(3):hover ~ #lavalamp {
+    left: 170px;
+}
+#nav li:nth-of-type(4):hover ~ #lavalamp {
+    left: 250px;
+}
+#nav li:nth-of-type(5):hover ~ #lavalamp {
+    left: 330px;
+}
+#nav li:nth-of-type(6):hover ~ #lavalamp {
+    left: 410px;
+}
+#nav li:nth-of-type(7):hover ~ #lavalamp {
+    left: 490px;
+}
+#nav li:nth-of-type(8):hover ~ #lavalamp {
+    left: 565px;
+}
+.btn {
+  background-color: #ddd;
+  border: none;
+  
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+  color: white;
+}
+/*footer*/
+
+
+.wrap-suggestion {
+  z-index: 9;
+  position: absolute;
+}
