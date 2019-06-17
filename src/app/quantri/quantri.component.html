@@ -1,0 +1,88 @@
+<div class="container" style="background: light">
+
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="book" role="tabpanel" aria-labelledby="book-tab">
+
+      <!--Menu -->
+      <div class="row" style="margin-bottom: 10px; margin-top: 10px">
+        <div class="col-md-12">
+          <div class="panel panel-default" *ngIf='!showform' > 
+            <button type="button" class="btn btn-outline-secondary" style="margin-bottom: 10px" (click)='them()'> <i class="fas fa-plus"></i>  Thêm Dữ Liệu Sản Phẩm </button>
+
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col-3">ID Sản Phẩm</th>
+                  <th scope="col-2">Tên Sản Phẩm</th>
+                  <th scope="col-3">Thông Tin Thêm</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let p of products">
+                  <th scope="row">{{p.id}}</th>
+                  <td>{{p.ten}}</td>
+                  <td>
+                    <button type="button" class="btn btn-warning btn-sm" style="margin-right: 10px" data-toggle="modal1" data-target="#exampleModaldetail" (click)="getpopup(p)">Chi Tiết </button>
+                    <button type="button" class="btn btn-success btn-sm" style="margin-right: 10px" data-toggle="modal" data-target=".bd-example-modal-lg" (click)="edit(p)">  Sữa </button>
+                    <button type="button" class="btn btn-danger btn-sm" style="margin-right: 10px" (click)="delete(p.id)"> Xoá </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+          <!--Thêm Sản Phẩm-->
+          <div class=" panel-default" *ngIf='showform'>
+            <div class="row">
+              <div class="card-body col-md-8">
+                <div class="text-center">
+                  <h4> Thêm Sản Phẩm </h4>
+                </div>
+                <hr />
+
+                <div class="form-group">
+                  <label for="name" class="control-label"> Tên Sản Phẩm </label>
+                  <input type="text" [(ngModel)]='product_ten' class="form-control">
+                </div>
+
+                <div class="form-group">
+                  <label for="name" class="control-label">Thông Tin Về Sản Phẩm</label>
+                  <textarea [(ngModel)]='product_mota' rows="3" class="form-control"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Hình Ảnh</label>
+                  <input type="file" [(ngModel)]='product_img' class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <hr />
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <button type="submit" class="btn btn-primary" style="margin-right:10px" (click)="add();huythem()" >Lưu</button>
+                      <button type="submit" class="btn btn-default" (click)='huythem()'>Bỏ qua</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="tab-pane fade" id="buy" role="tabpanel" aria-labelledby="buy-tab">
+
+
+    </div>
+  </div>
+
+
+</div>
+
+<app-chitietquantri [list]="selectedProductadmin"> </app-chitietquantri>
+<app-suaquantri [list1]="selectededit"> </app-suaquantri>

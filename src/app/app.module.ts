@@ -14,6 +14,9 @@ import { Thietbi1Component } from './thietbi1/thietbi1.component';
 import { LienheComponent } from './lienhe/lienhe.component';
 import { ChitietComponent } from './chitiet/chitiet.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { QuantriComponent } from './quantri/quantri.component';
+import { ChitietquantriComponent } from './chitietquantri/chitietquantri.component';
+import { SuaquantriComponent } from './suaquantri/suaquantri.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { HeroesComponent } from './heroes/heroes.component';
     LienheComponent,
     ChitietComponent,
     HeroesComponent,
+    QuantriComponent,
+    ChitietquantriComponent,
+    SuaquantriComponent,
     
   ],
   imports: [
